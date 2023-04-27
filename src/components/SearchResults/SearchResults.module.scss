@@ -1,0 +1,12 @@
+.mainBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw [col-start]);
+    justify-content: center;
+    justify-items: center;
+}
+
+@media (min-width: 1400px) {
+    .mainBlock {
+        grid-template-columns: repeat(4, 20vw [col-start]);
+    }    
+}

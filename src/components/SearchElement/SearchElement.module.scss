@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Theano Didot';
+    src: url(../../../public/fonts/TheanoDidot.ttf);
+}
+
+
+.mainBlock {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    width: 25vw;
+    height: 16vh;
+    max-width: 400px;
+    align-items: center;
+    box-shadow: 0px 4px 32px rgba(51, 51, 51, 0.15);
+    margin: 5px;
+    padding: 5px;
+    transition: all 0.5s;
+
+    &:hover {
+        box-shadow: 0px 6px 48px rgb(107, 107, 107);
+        transform: scale(1.02);
+    }
+
+    &_avatar {
+        width: 9.66vw;
+        height: 9.8vh;
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+    &_h3 {
+        font-family: 'Theano Didot';
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.03);
+        }
+        &:active {
+            transform: scale(0.1);
+        }
+    }
+
+    &_p {
+        font-family: 'Theano Didot';
+        font-weight: 300;
+        font-size: 1.1vh;
+        margin: 0.7vh 0 0 0;
+    }
+
+    &_login {
+        font-family: 'Theano Didot';
+        font-weight: 800;
+        font-size: 1.3vh;
+    }
+
+    &_a {
+        text-decoration: none;
+        font-family: 'Theano Didot';
+        font-weight: 100;
+        font-size: 1.2vh;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .mainBlock {
+        width: 19vw;
+        height: 21.5vh;
+        max-width: 400px;
+
+        &_avatar {
+            width: 9.66vw;
+            height: 14vh;
+            max-height: 200px;
+            max-width: 200px;
+        }    
+    }    
+}
